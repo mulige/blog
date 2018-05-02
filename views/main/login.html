@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="icon" href="../../public/img/login.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../public/icon/iconfont.css">
+    <style type="text/css">
+        body{
+            background: salmon;
+        }
+        div{
+            width: 300px;
+            border-radius: 10px;
+            padding: 30px;
+            background: tan;
+            margin: 200px auto;
+            text-align: center;
+        }
+        p input{
+            height: 24px;
+            line-height: 24px;
+            border-radius: 5px;
+            border: none;
+            padding-left: 10px;
+            outline: none;
+        }
+        #login input{
+            height: 26px;
+            line-height: 28px;
+            color: #333;
+            font-weight: bold;
+            padding:0 16px;
+        }
+
+        #login .goto {
+            font-size: 12px;
+            color: #999;
+        }
+        #login .login_btn:hover {
+            color: red;
+        }
+        #haveFont {
+            position: relative;
+        }
+        #haveFont span.iconfont {
+            position: absolute;
+            right: 30px;
+            top: 6px;
+        }
+        #haveFont span.iconfont.icon-yanjing-zheng {
+            display: none;
+        }
+        #haveFont span.iconfont.icon-yanjing-bi {
+            /*display: none;*/
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form id="login">
+        <p>
+            <span>账号：</span>
+            <input type="text" value="" id="username"/>
+        </p>
+        <p id="haveFont">
+            <span>密码：</span>
+            <input type="password" value="" id="password"/>
+            <span class="iconfont icon-yanjing-bi"></span>
+            <span class="iconfont icon-yanjing-zheng"></span>
+        </p>
+        <p class="goto">还没账号？<a href="http://localhost:3081/register">去注册</a></p>
+        <p>
+            <input type="button" value="登录" class="login_btn"/>
+        </p>
+    </form>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../public/js/login.js"></script>
+</html>
